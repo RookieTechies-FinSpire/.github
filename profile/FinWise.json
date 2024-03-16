@@ -1,0 +1,209 @@
+{
+  "createTime": 1710589751691,
+  "updateTime": 1710611989505,
+  "name": "FinWise",
+  "description": "financial narratives, offering personalized investment insights",
+  "version": 1,
+  "tasks": [
+    {
+      "name": "LogIn/SignIn",
+      "taskReferenceName": "LogIn/SignIn_ref",
+      "inputParameters": {
+        "expression": "(function authenticate(username, password) {\r\n  if (username === 'admin' && password === 'admin') {\r\n    return true;\r\n  } else {\r\n    return false;\r\n  }\r\n})\r\n  ",
+        "evaluatorType": "graaljs",
+        "username": "admin",
+        "password": "admin"
+      },
+      "type": "INLINE",
+      "decisionCases": {},
+      "defaultCase": [],
+      "forkTasks": [],
+      "startDelay": 0,
+      "joinOn": [],
+      "optional": false,
+      "defaultExclusiveJoinTask": [],
+      "asyncComplete": false,
+      "loopOver": [],
+      "onStateChange": {}
+    },
+    {
+      "name": "fork",
+      "taskReferenceName": "fork_ref",
+      "inputParameters": {},
+      "type": "FORK_JOIN",
+      "decisionCases": {},
+      "defaultCase": [],
+      "forkTasks": [
+        [
+          {
+            "name": "Portfolio_Optimization",
+            "taskReferenceName": "Portfolio_Optimization_ref1",
+            "inputParameters": {
+              "expression": "(function()\r\n{//display portfolio\r\n  // display watchlist \r\n  //anaylsing them and suggesting recommendation return;\r\n  })();",
+              "evaluatorType": "graaljs"
+            },
+            "type": "INLINE",
+            "decisionCases": {},
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "onStateChange": {}
+          }
+        ],
+        [
+          {
+            "name": "do_while",
+            "taskReferenceName": "do_while_udw_ref",
+            "inputParameters": {
+              "ask": "no"
+            },
+            "type": "DO_WHILE",
+            "decisionCases": {},
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopCondition": "",
+            "loopOver": [
+              {
+                "name": "Chat_bot",
+                "taskReferenceName": "Chat_bot_sl3_ref",
+                "inputParameters": {
+                  "expression": "(function chatbot(Prompt, concept) {\r\n  if (concept === 'yes' || Prompt === 'yes') {\r\n    result: {'chat complete'};\r\n    return result;\r\n  } else {\r\n    return false;\r\n  }\r\n})",
+                  "evaluatorType": "graaljs",
+                  "Prompt": "yes",
+                  "concept": "yes"
+                },
+                "type": "INLINE",
+                "decisionCases": {},
+                "defaultCase": [],
+                "forkTasks": [],
+                "startDelay": 0,
+                "joinOn": [],
+                "optional": false,
+                "defaultExclusiveJoinTask": [],
+                "asyncComplete": false,
+                "loopOver": [],
+                "onStateChange": {}
+              }
+            ],
+            "evaluatorType": "graaljs",
+            "onStateChange": {}
+          }
+        ],
+        [
+          {
+            "name": "Investing_Strategy",
+            "taskReferenceName": "Investing_Strategy_ref",
+            "inputParameters": {
+              "expression": "(function strategy(attributes) {\r\n  if (attributes === 'yes') {\r\n    result: {'here are some times'};\r\n    return result;\r\n  } else {\r\n    return false;\r\n  }\r\n})",
+              "evaluatorType": "graaljs",
+              "attributes": "yes"
+            },
+            "type": "INLINE",
+            "decisionCases": {},
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "onStateChange": {}
+          }
+        ],
+        [
+          {
+            "name": "Memes",
+            "taskReferenceName": "Memes_ref2",
+            "inputParameters": {
+              "expression": "(function meme_display(Memes, like,comment) {\r\n  if (Memes === 'yes' || like === 'yes'|| comment==='yes') {\r\n    result: {'here are your meme'};\r\n    return result;\r\n  } else {\r\n    return false;\r\n  }\r\n})",
+              "evaluatorType": "graaljs",
+              "Memes": "yes",
+              "like": "yes",
+              "comment": "yes"
+            },
+            "type": "INLINE",
+            "decisionCases": {},
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "onStateChange": {}
+          }
+        ],
+        [
+          {
+            "name": "document_analysis",
+            "taskReferenceName": "document_analysis_ref",
+            "inputParameters": {
+              "expression": "(function doc_upload(doc) {\r\n  if (doc === 'uploaded') {\r\n    result: {'uploaded'};\r\n    return result;\r\n  } else {\r\n    return false;\r\n  }\r\n})",
+              "evaluatorType": "graaljs",
+              "doc": "uploaded"
+            },
+            "type": "INLINE",
+            "decisionCases": {},
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "onStateChange": {}
+          }
+        ]
+      ],
+      "startDelay": 0,
+      "joinOn": [],
+      "optional": false,
+      "defaultExclusiveJoinTask": [],
+      "asyncComplete": false,
+      "loopOver": [],
+      "onStateChange": {}
+    },
+    {
+      "name": "join",
+      "taskReferenceName": "join_ref",
+      "inputParameters": {},
+      "type": "JOIN",
+      "decisionCases": {},
+      "defaultCase": [],
+      "forkTasks": [],
+      "startDelay": 0,
+      "joinOn": [],
+      "optional": false,
+      "defaultExclusiveJoinTask": [],
+      "asyncComplete": false,
+      "loopOver": [],
+      "onStateChange": {}
+    }
+  ],
+  "inputParameters": [],
+  "outputParameters": {
+    "responsive_text": ""
+  },
+  "failureWorkflow": "",
+  "schemaVersion": 2,
+  "restartable": true,
+  "workflowStatusListenerEnabled": false,
+  "ownerEmail": "dhimanharsh142003@gmail.com",
+  "timeoutPolicy": "ALERT_ONLY",
+  "timeoutSeconds": 0,
+  "variables": {},
+  "inputTemplate": {}
+}
