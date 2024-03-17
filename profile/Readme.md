@@ -27,4 +27,5 @@
 
 ![ROOKIETECHIES FINTECH (1)](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/850a3d39-1d50-40e3-b0ae-eb0df54056ae)
 
+ Link: https://github.com/RookieTechies-FinSpire/Finspire/releases/download/beta-1.0/app-release.apk
 
