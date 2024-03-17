@@ -8,6 +8,7 @@
   <li><b>Comprehensive Analysis</b> : In-depth examination and evaluation of financial data, providing holistic insights for informed decision-making and strategy.</li>
   <li><b>News Summarization</b> : Condensing complex news stories into concise summaries, offering key highlights and insights for quick comprehension.</li> 
 </ul>
+
 <h1> ORKES CONDUCTOR WORKFLOW </h1>
 
 ![FinSpire](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/f2dfa32c-b77e-4e41-8d2b-1bacb64b8735)
@@ -20,6 +21,8 @@
 
 <h3>Link : https://finspire.vercel.app/ </h3>
 
-
 <h1> APPLICATION </h1>
+
+![ROOKIETECHIES FINTECH (1)](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/850a3d39-1d50-40e3-b0ae-eb0df54056ae)
+
 
