@@ -15,7 +15,8 @@
 <h1> XX NETWORK </h1>
 
 <h1> WEBSITE </h1>
-![ROOKIETECHIES FINTECH](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/6c4aaab6-ac30-4ca7-b76a-3a632cc40c95)
+
+![ROOKIETECHIES FINTECH](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/e67f3238-fa96-491d-9491-f0522f656cc5)
 
 <h3>Link : https://finspire.vercel.app/ </h3>
 
