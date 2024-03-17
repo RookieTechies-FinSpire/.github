@@ -17,7 +17,7 @@
 
 <h1> WEBSITE </h1>
 
-![ROOKIETECHIES FINTECH](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/e67f3238-fa96-491d-9491-f0522f656cc5)
+![ROOKIETECHIES FINTECH (2)](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/3f89d858-8fc4-41f5-a25b-b9dcb22c193c)
 
 <h3>Link : https://finspire.vercel.app/ </h3>
 
