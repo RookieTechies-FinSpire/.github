@@ -15,6 +15,8 @@
 
 <h1> XX NETWORK </h1>
 
+![WhatsApp Image 2024-03-17 at 12 14 07 PM](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/97b410b8-5c23-46c7-9ed5-ea999e926117)
+
 <h1> WEBSITE </h1>
 
 ![ROOKIETECHIES FINTECH (2)](https://github.com/RookieTechies-FinSpire/.github/assets/122113456/3f89d858-8fc4-41f5-a25b-b9dcb22c193c)
